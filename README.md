@@ -27,7 +27,7 @@ val json = json {
             }
         }
     }
-    println(ReformatJsonUtil.stringToJson(json))
+println(ReformatJsonUtil.stringToJson(json))
 ```
 
 Output:
