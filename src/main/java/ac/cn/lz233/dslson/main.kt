@@ -1,8 +1,7 @@
 import ac.cn.lz233.dslson.element.json
 import ac.cn.lz233.dslson.utils.ReformatJsonUtil
 
-fun main(args: Array<String>) {
-    val json = json {
+fun main(args: Array<String>) {/*val json = json {
         element {
             int("result", 0)
             array("feedList") {
@@ -43,6 +42,26 @@ fun main(args: Array<String>) {
                         string("userHead","https://tx-free-imgs.acfun.cn/style/image/201907/bSGlA8GDc9mmD6Hkhluu79i5s3c9d6H9.jpg?imageslim")
                         boolean("isFollowing",true)
                     }
+                }
+            }
+        }
+    }*/
+    val json = json {
+        element {
+            int("int", 233)
+            float("float", 233.33f)
+            string("string", "233")
+            boolean("boolean", true)
+            element("jsonObject") {
+                int("int", 233)
+                float("float", 233.33f)
+                string("string", "233")
+                boolean("boolean", true)
+                array("jsonArray") {
+                    int(233)
+                    float(233.33f)
+                    string("233")
+                    boolean(true)
                 }
             }
         }
